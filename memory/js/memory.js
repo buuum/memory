@@ -59,7 +59,7 @@ Memory = (function() {
           _this.restartSelectedCards();
         }
         el.addClass(_this.name(_this.options.selected_class));
-        img = _this.cards[$('li').index(el)];
+        img = _this.cards[$(_this.options.game_class + " ul li").index(el)];
         el.css('background-image', "url(" + img + ")");
         if ($(_this.elements_selected).length > 1) {
           return _this.checkPairs();
