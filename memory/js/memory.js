@@ -37,9 +37,9 @@ Memory = (function() {
     })(this));
     return preloadimgs.imagesLoaded().always((function(_this) {
       return function(instance) {
-        _this.options.onLoaded();
         _this.generateMemory();
-        return _this.addEvents();
+        _this.addEvents();
+        return _this.options.onLoaded();
       };
     })(this));
   };
